@@ -1,0 +1,165 @@
+body {
+    background-color: #333;
+    margin: 0;
+}
+
+
+header {
+    background-color: blueviolet;
+    width: 100%;
+    height: 100px;
+    padding: 40px 0 0 0;
+}
+
+#title {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+#main_frame {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#sliders {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: blueviolet;
+    width: 600px;
+    padding: 14px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+#instruments_frame {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 500px;
+    height: 48px;
+    background-color: blueviolet;
+    border-radius: 0 0 10px 10px;
+}
+
+.instruments {
+    width: 32px;
+    height: 32px;
+    background-color: aliceblue;
+}
+
+
+/* CSS Portal : Style Input Range generator */
+
+/* 
+
+    background-image: url(alu_btn.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+*/    
+
+/* L'image en tant que thumb ne marche que sur Chrome */
+
+input[type=range] {
+    height: 37px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: blueviolet;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 6px #CB13D1;
+    background: #FEE3FF;
+    border-radius: 10px;
+    border: 0px solid #D426FF;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    background-image: url(alu_btn.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;    
+    height: 30px;
+    width: 32px;
+    border-radius: 27px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FEE3FF;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 6px #CB13D1;
+    background: #FEE3FF;
+    border-radius: 10px;
+    border: 0px solid #D426FF;
+  }
+  input[type=range]::-moz-range-thumb {
+
+    background-image: url(alu_btn.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 32px;
+    border-radius: 27px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #FEE3FF;
+    border: 0px solid #D426FF;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px #CB13D1;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #FEE3FF;
+    border: 0px solid #D426FF;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px #CB13D1;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+
+    background-image: url(alu_btn.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 32px;
+    border-radius: 27px;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #FEE3FF;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #FEE3FF;
+  }
+  
