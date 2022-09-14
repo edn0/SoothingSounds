@@ -13,9 +13,26 @@ header {
 
 #title {
     color: white;
-    font-size: 32px;
+    font-size: 38px;
     text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
+
+.spacer {
+  width: 8px;
+}
+
+.letter {
+  transition: 200ms ease-out;
+}
+
+.letter:hover {
+  color: hotpink;
+}
+
 
 
 #main_frame {
