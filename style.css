@@ -3,13 +3,22 @@ body {
     margin: 0;
 }
 
+#header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 header {
     background-color: blueviolet;
-    width: 100%;
+    width: 50%;
     height: 100px;
     padding: 40px 0 0 0;
+    border-radius: 0 0 10px 10px;
 }
+
+/* ajouter des box shadow quand je hover les lettres */
 
 #title {
     color: white;
