@@ -1,5 +1,9 @@
 let sliders_values = [];
 
+let sfx = [];
+
+let thunder_sfx = [];
+
 function get_sliders_value () {
 
     sliders_values = [];
@@ -18,6 +22,10 @@ function get_sliders_value () {
     console.log(volume0 + "volume");
     rain_fx.volume = volume0/100;
     rain_fx.muted = false;
+
+    let volume1 = sliders_values[1];
+    thunder_fx.volume = volume1/100;
+    thunder_fx.muted = false;
 
     let volume2 = sliders_values[2];
     group_fx.volume = volume2/100;
@@ -40,6 +48,11 @@ let group_fx = new Audio("sounds/sfx/crowd_talking_fx.wav")
 group_fx.muted = true;
 group_fx.play();
 group_fx.loop = true;
+
+let thunder_fx = new Audio("sounds/sfx/distant-thunder-01.wav")
+thunder_fx.muted = true;
+thunder_fx.play();
+thunder_fx.loop = true;
 
 window.onload = setInterval(get_sliders_value, 2);
 
