@@ -108,7 +108,10 @@ header {
 
 */    
 
-/* L'image en tant que thumb ne marche que sur Chrome */
+#music_volume_slider {
+  width: 35%;
+}
+
 
 input[type=range] {
     height: 37px;
@@ -162,7 +165,7 @@ input[type=range] {
   }
   input[type=range]::-moz-range-thumb {
 
-    background-image: url(alu_btn.png);
+    background-image: url(img/alu_btn.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -201,7 +204,7 @@ input[type=range] {
   input[type=range]::-ms-thumb {
     margin-top: 1px;
 
-    background-image: url(alu_btn.png);
+    background-image: url(img/alu_btn.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

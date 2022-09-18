@@ -50,17 +50,17 @@
 
     <div id="sliders">
 
-        <img src="rain_img.png" width="64" height="64" style="filter: invert(100%);">
+        <img src="img/rain_img.png" width="64" height="64" style="filter: invert(100%);">
 
         <input type="range" id="slider1" value="0" min="0" max="100">
 
 
-        <img src="thunder_img.png" width="64" height="64" style="filter: invert(100%);">
+        <img src="img/thunder_img.png" width="64" height="64" style="filter: invert(100%);">
 
         <input type="range" id="slider2" value="0" min="0" max="100">
 
 
-        <img src="talking_img.png" width="64" height="64">
+        <img src="img/talking_img.png" width="64" height="64">
 
         <input type="range" id="slider3" value="0" min="0" max="100">
 
@@ -68,11 +68,14 @@
 
     </div>
 
+    <input type="range" id="music_volume_slider" value="0" min="0" max="100">
+
+
     <div id="instruments_frame">
-        <div class="instruments" id="piano"></div>
-        <div class="instruments" id="trumpet"></div>
-        <div class="instruments" class="placeholder"></div>
-        <div class="instruments" class="placeholder"></div>
+        <div class="instruments" id="keys" onclick="toggle(0)"></div>
+        <div class="instruments" id="drums" onclick="toggle(1)"></div>
+        <div class="instruments" id="sax" onclick="toggle(2)"></div>
+        <div class="instruments" class="placeholder" onclick="console.log('sauce')"></div>
         <div class="instruments" class="placeholder"></div>
         <div class="instruments" class="placeholder"></div>
     </div>
